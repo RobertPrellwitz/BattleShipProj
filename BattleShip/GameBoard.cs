@@ -10,7 +10,7 @@ namespace BattleShip
 
         public GameBoard()
         {
-           // board = new char[x, y];
+           board = new char[20, 20];
         }
 
 
@@ -29,6 +29,16 @@ namespace BattleShip
             }
             return board;
 
+        }
+        public void PrintBoard()
+        {
+            for (int i = 0; i < board.GetLength(0); i++)
+            {
+                for (int j = 0; j < board.GetLength(1); j++)
+                {
+                    Console.WriteLine(board[i,j]);
+                }
+            }
         }
     }
 }

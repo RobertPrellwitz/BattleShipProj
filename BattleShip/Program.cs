@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace BattleShip
 {
@@ -7,6 +8,9 @@ namespace BattleShip
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            Control test = new Control();
+            test.sample();
         }
     }
 }
