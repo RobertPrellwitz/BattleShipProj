@@ -31,8 +31,26 @@ namespace BattleShip
     {
         public Submarine()
         {
-            name = "Submanrine";
+            name = "Submarine";
             size = 3;
+
+        }
+    }
+    public class BattleShip : Ship
+    {
+        public BattleShip()
+        {
+            name = "Battleship";
+            size = 4;
+
+        }
+    }
+    public class AirCraftCarrier : Ship
+    {
+        public AirCraftCarrier()
+        {
+            name = "AirCraftCarier";
+            size = 5;
 
         }
     }

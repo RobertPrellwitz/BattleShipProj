@@ -21,14 +21,11 @@ namespace BattleShip
 
         public Array PlayerBoard()
         {
-            //int x = 4; int y = 4;
-           
             for (int i = 0; i < x; i++)
             {
                 for (int j = 0; j < y; j++)
                 {
                     board[i,j] = 'O';
-
                 }
             }
             return board;
