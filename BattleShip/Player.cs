@@ -8,6 +8,7 @@ namespace BattleShip
     {
         public string name;
         public int ships;
+        public List<Ship> fleet;
        
         public Player()
         {

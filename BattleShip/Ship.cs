@@ -7,7 +7,8 @@ namespace BattleShip
 
     {
         public string name;
-        public Array size;
+        public int size;
+        public List<(int, int)> position;
 
         public Ship()
         {
@@ -19,7 +20,7 @@ namespace BattleShip
         public Destroyer()
         {
             name = "Destroyer";
-            char[,] array = new char[1, 1];
+            size = 2;
 
         }
        
@@ -31,6 +32,7 @@ namespace BattleShip
         public Submarine()
         {
             name = "Submanrine";
+            size = 3;
 
         }
     }

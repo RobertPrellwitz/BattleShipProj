@@ -10,7 +10,7 @@ namespace BattleShip
 
         public GameBoard()
         {
-            board = new char[x, y];
+           // board = new char[x, y];
         }
 
 

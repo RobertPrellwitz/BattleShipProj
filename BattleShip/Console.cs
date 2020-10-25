@@ -10,9 +10,14 @@ namespace BattleShip
         public Console()
         {
         }
+        GameBoard play1 = new GameBoard();
+         
+
+       
 
         public void printGameBoard(GameBoard board)
         {
+            
             for (int i = 0; i < board.GetLength; i++)
             {
 
