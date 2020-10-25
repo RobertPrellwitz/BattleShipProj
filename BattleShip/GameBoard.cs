@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
+
 namespace BattleShip
 {
     public class GameBoard
@@ -10,20 +12,22 @@ namespace BattleShip
 
         public GameBoard()
         {
-           board = new char[20, 20];
+            x = 20;
+            y = 20;
+           board = new char[x,y];
         }
 
-
+       
 
         public Array PlayerBoard()
         {
-            int x = 20; int y = 20;
+            //int x = 4; int y = 4;
            
             for (int i = 0; i < x; i++)
             {
                 for (int j = 0; j < y; j++)
                 {
-                    board[x, y] = 'O';
+                    board[i,j] = 'O';
 
                 }
             }
@@ -34,9 +38,10 @@ namespace BattleShip
         {
             for (int i = 0; i < board.GetLength(0); i++)
             {
+                Console.WriteLine();
                 for (int j = 0; j < board.GetLength(1); j++)
                 {
-                    Console.WriteLine(board[i,j]);
+                    Console.Write(board[i,j]);
                 }
             }
         }

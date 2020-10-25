@@ -12,8 +12,8 @@ namespace BattleShip
             testGame = new GameBoard();
 
 
-            testGame.PlayerBoard();
-            testGame.PrintBoard();
+            //testGame.PlayerBoard();
+            //testGame.PrintBoard();
 
         }
 
