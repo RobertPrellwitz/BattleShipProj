@@ -12,6 +12,7 @@ namespace BattleShip
 
         public Ship()
         {
+            position = new List<(int, int)>();
         }
     }
 
@@ -33,6 +34,7 @@ namespace BattleShip
         {
             name = "Submarine";
             size = 3;
+            
 
         }
     }
